@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My goal</title>
+    <link rel="icon" href="./asset/css/img/hourglass.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- <div class="gif-intro">
+            <h2 class="slogan">NOTHING IS IMPOSSIBLE</h2>
+            <img src="./asset/video/Mochi-Cute-Sticker-Mochi-Cute--unscreen.gif" alt="">
+        </div> -->
+        <header class="header-app">
+            <div class="header-app__left">
+                <a  class="header-app__link" href="index.html">DEFAULT</a>
+                <a  class="header-app__link" href="hex.html">SETTING</a>
+            </div>
+            <div>
+                <h3 class="header-app__center">Time to focus!</h3>
+            </div>
+            <div class="header-app__right">
+                <img src="./asset/css/img/img3.png" alt="">
+                <div class="modal">
+                    <div class="modal-container">
+                        <div class="modal-container__header">
+                            <h3>Thời gian hợp lý</h3>
+                            <i class="close-icon fas fa-times"></i>
+                        </div>
+                        <ul class="modal-container__list">
+                            <li class="modal-container__item">💬 Chọn công việc mình sẽ làm</li>
+                            <li class="modal-container__item">💬 Đặt thời gian, thông thường là 25 phút</li>
+                            <li class="modal-container__item">💬 Làm việc cho đến khi hết 25 phút</li>
+                            <li class="modal-container__item">💬 Nghỉ giải lao 5 phút</li>
+                            <li class="modal-container__item">💬 Sau 4 lần nghỉ giải lao trên thì nghỉ dài hơn với 10 phút<br>(hoặc 15 - 30 phút tùy công việc và sức của mỗi người)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="video-clock" style="background-image: url('./asset/css/img/img1.jpg')">
+            <!-- <video id="video" src="./asset/video/vecteezy_animation-of-a-ticking-clock-20-seconds-before-midnight-countdown-happy-new-year_1617653.mp4" loop muted autoplay></video> -->
+            <div class="alarm-clock">
+                <div class="alarm-clock--wrap">
+                    <input type="text"  name=""  id="inputNumber" placeholder="Đặt mục tiêu muốn thực hiện⏱..."
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <div class="clock__number"> <span id="min">00</span> : <span id="sec">00</span> </div>
+                    <div class="clock__btn-container">
+                        <button id="start" class="clock__btn">START</button>
+                        <button id="reset" class="clock__btn">RESET</button>
+                    </div>
+                </div>
+           </div>
+           <section class="section-center">
+            <!-- form -->
+            <form class="grocery-form">
+              <p class="alert"></p>
+              <h3>Lên kế hoạch🌱</h3>
+              <div class="form-control">
+                <input type="text" id="grocery" placeholder="VD: Viec 1: ABC / 13h - 13h25" />
+                <button type="submit" class="submit-btn">Thêm</button>
+              </div>
+            </form>
+            <!-- list -->
+            <div class="grocery-container">
+              <div class="grocery-list"></div>
+              <button class="clear-btn">Xóa tất cả</button>
+            </div>
+          </section>
+           <div class="my-goal">
+               <span>Complete my goals</span>
+               <span>Don't give up!</span>
+           </div>
+           <audio id="audio" src="./asset/Con gioi - Kien (1).mp3"></audio>
+        </div>
+    </div>
+</body>
+<script src="base.js"></script>
+</html>
